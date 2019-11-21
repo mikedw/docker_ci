@@ -4,7 +4,7 @@ USER root
 
 # Install ruby
 RUN apt-get update && \
-    apt-get install -y ruby
+    apt-get install -y ruby-dev
 
 # Install fastlane
 RUN gem install fastlane \
