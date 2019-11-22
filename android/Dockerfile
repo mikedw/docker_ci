@@ -12,7 +12,7 @@ RUN gem install fastlane \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && apt-get autoremove -y && apt-get clean
 
+USER circleci
+
 # Install Firebase CLI
 RUN curl -sL firebase.tools | bash
-
-USER circleci
